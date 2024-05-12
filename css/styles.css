@@ -29,3 +29,15 @@
 .btn-bg:hover {
     background-color: #0088ce;
 }
+
+.category-list {
+    font-family: Arial;
+    text-align: center;
+    color: white;
+    background-color: DodgerBlue;
+    font-size: 1.5rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+
+}
