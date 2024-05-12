@@ -13,16 +13,121 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-    </footer>
+    <div class="container header">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom header-text"
+      >
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+            <img src="./images/logo.svg" alt="" />
+          </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="./index.html" class="nav-link px-2 link">Home</a></li>
+          <li><a href="./activities.html" class="nav-link px-2">Activities</a></li>
+          <li><a href="#" class="nav-link px-2">Hiking</a></li>
+          <li><a href="#" class="nav-link px-2">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2">About</a></li>
+        </ul>
+
+        <div class="col-md-3 text-end"></div>
+      </header>
+    </div>
+    <div class="container">
+      <main>
+        <div class="container">
+          <img src="./images/home-page-img.jpeg" alt="" width="100%" />
+        </div>
+        <div class="container mt-5 justify-content-center text-blue text-center">
+          <div><h1 class="caveat-brush-regular">Discover the Garden State</h1></div>
+          <div class="text-font">
+            <p>
+              You could visit New Jersey over a thousand times and still miss out on amazing places to see and thrilling
+              things to do. Far from a one-and-done destination, we wow with 130 miles of spectacularly soft shorelines.
+              Beyond these beautiful beaches, our cities pulse with exciting entertainment and culinary pleasures. Parks
+              and natural wonders invite exhilarating recreation—or complete relaxation. One-of-a-kind attractions keep
+              visitors coming back for more. And history, art and culture come to life at sites that can only be found
+              here. No matter what your interests, there’s a perfect vacation waiting for you in New Jersey.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="container mt-5 d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn-primary btn-bg"
+            style="--bs-btn-padding-y: 0.5rem; --bs-btn-padding-x: 1rem; --bs-btn-font-size: 1rem"
+          >
+            EXPLORE NEW JERSEY
+          </button>
+        </div>
+        <div class="container mt-5 justify-content-center text-center">
+          <h2 class="caveat-brush-regular">Upcoming Events</h2>
+        </div>
+        <div class="container">
+          <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                  <div class="card shadow-sm">
+                    <img src="./images/event1.jpeg" alt="" width="343" height="228">
+                    <div class="card-body">
+                      <p class="card-text text-center">
+                        WARREN COUNTY WINERY TRAIN
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-md btn-outline-secondary btn-bg">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./images/event2.jpeg" alt="" width="343" height="228">
+                      <div class="card-body">
+                        <p class="card-text text-center">
+                            THE NEW JERSEY SEAFOOD FESTIVAL
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-outline-secondary btn-bg">View</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="./images/event3.jpeg" alt="" width="343" height="228">
+                      <div class="card-body">
+                        <p class="card-text text-center">
+                            NEW JERSEY RENAISSANCE FAIRE
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-md btn-outline-secondary btn-bg">View</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
