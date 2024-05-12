@@ -102,3 +102,7 @@ let activities = [
 ];
 
 
+window.onload = function () {
+
+}
+
