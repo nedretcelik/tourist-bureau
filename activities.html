@@ -42,26 +42,116 @@
       </header>
     </div>
     <div class="container">
-        <main>
-            <div class="container mt-5 d-flex justify-content-center">
-                <div><h1 class="caveat-brush-regular">Category</h1></div>
+      <main>
+        <div class="container category p-5">
+          <div class="container mt-5 d-flex justify-content-center">
+            <div><h1 class="caveat-brush-regular">Category</h1></div>
+          </div>
+          <div class="container mt-5 d-flex justify-content-center">
+            <select id="categoryList" class="custom-list">
+              <option value="">Select a category</option>
+            </select>
+          </div>
+        </div><!-- 
+        <div class="container mt-5">
+          <h4>Category:</h4>
+          <p id="seledtedCategory"></p>
+        </div> -->
+        <div class="container activities p-5">
+          <div class="container mt-5 d-flex justify-content-center">
+            <div><h1 class="caveat-brush-regular">Activity</h1></div>
+          </div>
+          <div class="container mt-5 d-flex justify-content-center">
+            <select id="activityList" class="custom-list">
+              <option value="">Select a activity</option>
+            </select>
+          </div>
+        </div>
+        <div class="container mt-5">
+          <div>
+            <h4>Activity:</h4>
+            <p id="seledtedActivity"></p>
+          </div>
+          <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-center">
+              <div class="col text-center">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3">
+                    <span
+                      >ID
+                      <h4 id="activityId" class="my-0 fw-normal">M102</h4></span
+                    >
+                  </div>
+                  <div class="card-body">
+                    <h5>Description:</h5>
+                    <p id="descriptionParagraph">
+                      Enjoy touring our qwerky Forks and Spoons Museum. It houses the worlds largest collection of, you
+                      guessed it, forks and spoons!
+                    </p>
+                    <hr />
+                    <small>Location:</small>
+                    <p id="locationParagraph">1056 Lost Knives Court</p>
+                    <hr />
+                    <h5>Price</h5>
+                    <div class="d-flex justify-content-center">
+                      <h1 id="hideSign">$</h1>
+                      <h1 id="priceInfo"></h1>
+                    </div>
+                    <button id="buyTicketBtn" type="button" class="btn btn-primary btn-sm">Buy Ticket</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col mx-5 payment-border">
+                <form id="paymentForm">
+                  <div class="mb-3">
+                    <label for="numberOfTicket" class="form-label"> Number Of Ticket</label>
+                    <input id="numberOfTicket" type="number" class="form-control"  min="1" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="creditCardNumber" class="form-label">Credit Card Number</label>
+                    <input type="text" class="form-control" id="creditCardNumber" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                  </div>
+                  <div>
+                    <h3 >total</h3>
+                    <p id="totalDetails"></p>
+                  </div>
+                  <div class="mt-5 d-flex justify-content-center">
+                    <button id="purchaseButton" type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</button>
+                    <button id="resetButton" type="button" class="btn btn-info">Reset</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="container mt-5 d-flex justify-content-center">
-                <select  id="categoryList" class="custom-list">
-                    <option value="">Select a category</option>
-                </select>
+          </div>
+        </div>
+      </main>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Purchase Confirmation</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="container mt-5 d-flex justify-content-center">
-                <div><h1 class="caveat-brush-regular">Activity</h1></div>
+            <div class="modal-body">
+              <p id="purchaseConfirmation"></p>
             </div>
-            <div class="container mt-5 d-flex justify-content-center">
-                <select  id="activityList" class="custom-list">
-                    <option value="">Select a activity</option>
-                </select>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save information</button>
             </div>
-        </main>
+          </div>
+        </div>
+      </div>
     </div>
+
     <footer></footer>
+    <script src="/scripts/activities.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
